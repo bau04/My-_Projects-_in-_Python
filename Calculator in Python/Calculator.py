@@ -11,17 +11,8 @@ Quo = float(n1) / float(n2)
 Mod = float(n1) % float(n2)
 
 match sign:
-    case '+' :
-        print("Sum : " , Sum)
-
-    case '-' :
-        print("Difference : " , Dif)
-
-    case '*' :
-        print("Product : " , Prod)
-
-    case '/' :
-        print("Quotient : " , Quo)
-
-    case '%' :
-        print("Modulo : " , Mod)
+    case '+' : print("Sum : " , Sum)
+    case '-' : print("Difference : " , Dif)
+    case '*' : print("Product : " , Prod)
+    case '/' : print("Quotient : " , Quo)
+    case '%' : print("Modulo : " , Mod)
