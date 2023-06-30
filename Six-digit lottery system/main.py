@@ -17,25 +17,19 @@ x4 = int(random.randint(0,9))
 x5 = int(random.randint(0,9))
 x6 = int(random.randint(0,9))
 
-if n1 == x1 & n2 == x2 & n3 == x3 & n4 == x4 & n5 == x5 & n6 == x6:
+if n1 == x1 and n2 == x2 and n3 == x3 and n4 == x4 and n5 == x5 and n6 == x6:
     print("\nToday's lottery result is: ")
     print("Winning number: " , x1 , " , " , x2 , " , " , x3 , " , " , x4 , " , " , x5 , " , " , x6)
     print("     Your pick: " , n1 , " , " , n2 , " , " , n3 , " , " , n4 , " , " , n5 , " , " , n6)
     print("        Result: You Won!!!")
 
-if n1 <= -1 | n2 <= -1 | n3 <= -1 | n4 <= -1 | n5 <= -1 | n6 <= -1 :
+elif n1 <= -1 or n2 <= -1 or n3 <= -1 or n4 <= -1 or n5 <= -1 or n6 <= -1 :
     print("Error: The number you picked is below the range")
 
-if n1 >= 10 | n2 >= 10 | n3 >= 10 | n4 >= 10 | n5 >= 10 | n6 >= 10 :
+elif n1 >= 10 or n2 >= 10 or n3 >= 10 or n4 >= 10 or n5 >= 10 or n6 >= 10 :
     print("Error: The number you picked is above the range ")
 
-elif n1 != x1 & n2 != x2 & n3 != x3 & n4 != x4 & n5 != x5 & n6 != x6:
-    print("\nToday's lottery result is: ")
-    print("Winning number: " , x1 , " , " , x2 , " , " , x3 , " , " , x4 , " , " , x5 , " , " , x6)
-    print("     Your pick: " , n1 , " , " , n2 , " , " , n3 , " , " , n4 , " , " , n5 , " , " , n6)
-    print("        Result: You lost")
-
-else :
+elif n1 != x1 or n2 != x2 or n3 != x3 or n4 != x4 or n5 != x5 or n6 != x6:
     print("\nToday's lottery result is: ")
     print("Winning number: " , x1 , " , " , x2 , " , " , x3 , " , " , x4 , " , " , x5 , " , " , x6)
     print("     Your pick: " , n1 , " , " , n2 , " , " , n3 , " , " , n4 , " , " , n5 , " , " , n6)
