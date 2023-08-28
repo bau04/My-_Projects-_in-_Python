@@ -102,3 +102,4 @@ playerThree = {
 
 print("Accessing attributes dict inside playerThree dict : ", playerThree.get("physical"))
 print("key inside attributes dict inside playerThree dict: ",playerThree.get("physical").get("nationality"))
+ 
