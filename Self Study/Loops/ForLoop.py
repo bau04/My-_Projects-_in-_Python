@@ -44,4 +44,36 @@ print("")
 
 for x in range(10):
     print(x)
-  
+
+print("")
+
+# Nested For Loop
+# using range in nested for Loop
+
+for y in range(5):  # will loop everything inside 5x
+    for z in range(5):  # this loop will be looped 5x, and it will also loop everything inside
+        print("Hello")  # will be printed 25x
+
+print("")
+# "end=" is used to combine to separate printed lines into one line
+print("*", end="")
+print("*")  # This line will be connected to the print above
+
+for y in range(5):  # will loop everything inside 5x
+    for z in range(5):  # this loop will be looped 5x, and it will also loop everything inside
+        print("*", end="")  # will be printed 25x
+    print("NewLine")  # moves/prints to the next line after the "for z" loop is run
+
+# reading multi-dimensional collections using for loop
+courseStudents = [
+    ["BSIT", "Bob"],
+    ["BSIT", "Badot"],
+    ["BSCS", "Buw"],
+    ["BSCS", "Ante"],
+    ["BSIT", "Manute"]
+]
+
+for listStudent in courseStudents:  # All the list inside the courseStudents list is ran
+    for i in listStudent:  # loops the nested list individually
+        print(i)  # prints the item of the nested list individually
+    print()  # Creates a space everytime the loop completed a cycle
